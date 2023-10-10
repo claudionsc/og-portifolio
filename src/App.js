@@ -5,9 +5,7 @@ import PageArt from './components/pageArt/PageArt';
 function App() {
   return (
     <div className="App">
-      <h1>OK</h1>
       <RenderArts />
-      <PageArt />
     </div>
   );
 }
