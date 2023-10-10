@@ -1,12 +1,12 @@
 import './styles/App.css';
-import Images from './components/images/Images';
+import RenderArts from './components/RenderArts/RenderArts';
 import PageArt from './components/pageArt/PageArt';
 
 function App() {
   return (
     <div className="App">
       <h1>OK</h1>
-      <Images />
+      <RenderArts />
       <PageArt />
     </div>
   );
