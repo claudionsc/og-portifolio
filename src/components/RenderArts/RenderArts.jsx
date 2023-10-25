@@ -22,11 +22,9 @@ const RenderArts = () => {
       <section className="artworks">
         {artworks.map((obras, index) => {
           return (
-            <span className="artwork-detail">
-              <ImgRenderArts appearance={Link} to={`/art/${obras.nome}`}>
+              <ImgRenderArts className="artwork-detail" appearance={Link} to={`/${obras.nome}`}>
                 <img src="" alt={`Obra `} />
               </ImgRenderArts>
-            </span>
           );
         })}
       </section>

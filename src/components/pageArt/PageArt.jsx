@@ -1,8 +1,11 @@
 import React from 'react'
+import { ImgRenderArts } from '../ImgRenderArts/ImgRenderArts'
 
 const PageArt = () => {
   return (
-    <div>PageArt</div>
+    <ImgRenderArts appearance={'span'}>
+      Teste
+    </ImgRenderArts>
   )
 }
 
