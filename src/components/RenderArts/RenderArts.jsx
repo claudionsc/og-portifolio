@@ -1,17 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MainContent } from "./RenderArtsStyle";
-import { ImgRenderArts } from "../ImgRenderArts/ImgRenderArts";
+import { ImgRenderArts } from "../imgRenderArts/ImgRenderArts";
 import { Link } from "react-router-dom";
+import { artworks } from "../../data/services/api";
+
 
 const RenderArts = () => {
   // Lista de obras do artista (pode ser um array de URLs de imagens)
-  const artworks = [
-    { nome: "link_para_obra1.jpg" },
-    { nome: "link_para_obra2.jpg" },
-    { nome: "link_para_obra3.jpg" },
-    // Adicione mais obras conforme necessário
-  ];
-
   return (
     <MainContent>
       <header>
@@ -22,9 +17,7 @@ const RenderArts = () => {
       <section className="artworks">
         {artworks.map((obras, index) => {
           return (
-              <ImgRenderArts className="artwork-detail" appearance={Link} to={`/${obras.nome}`}>
-                <img src="" alt={`Obra `} />
-              </ImgRenderArts>
+              <ImgRenderArts className="artwork-detail" appearance={Link} to={`/${obras.nome}`} src={obras.img} />
           );
         })}
       </section>

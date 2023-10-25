@@ -9,6 +9,6 @@ interface ImgProps extends HTMLAttributes<HTMLAnchorElement | HTMLElement> {
 
 export const ImgRenderArts = ({ appearance: Component, to, children, ...props }: ImgProps): React.ReactElement => {
   return <Component to={to || ""} {...props}>
-    {children}
+      <img {...props} alt={`Obra `} />
   </Component>
 };

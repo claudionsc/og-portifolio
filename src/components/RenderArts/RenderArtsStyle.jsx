@@ -19,11 +19,17 @@ export const MainContent = styled.main`
 
   .artwork-detail {
     display: block;
-    aspect-ratio: 4.3;
-    width: 50vw;
-    height: 50vh;
+    width: 100vw;
+    height: 70vh;
     background-color: tomato;
     margin-bottom: 20px;
+    
+    img{
+      aspect-ratio: 4.3;
+      width: 90%;
+      margin: auto;
+      object-fit: cover;
+    }
   }
 
   @media (max-width: 360px) {

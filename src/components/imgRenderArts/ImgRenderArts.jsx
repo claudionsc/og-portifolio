@@ -13,6 +13,6 @@ var __rest = (this && this.__rest) || function (s, e) {
 export const ImgRenderArts = (_a) => {
     var { appearance: Component, to, children } = _a, props = __rest(_a, ["appearance", "to", "children"]);
     return <Component to={to || ""} {...props}>
-    {children}
+      <img {...props} alt={`Obra `}/>
   </Component>;
 };
