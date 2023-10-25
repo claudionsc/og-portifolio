@@ -1,4 +1,5 @@
-import React, { HTMLAttributes } from "react";
+import  * as React from "react";
+import { HTMLAttributes } from "react";
 import { Link } from "react-router-dom";
 
 interface ImgProps extends HTMLAttributes<HTMLAnchorElement | HTMLElement> {
