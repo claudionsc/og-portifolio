@@ -1,10 +1,13 @@
-import React from 'react'
-import { ImgRenderArts } from '../imgRenderArts/ImgRenderArts'
+import React from "react";
+import { ImgRenderArts } from "../imgRenderArts/ImgRenderArts";
+import { MainContent } from "../RenderArts/RenderArtsStyle";
 
 const PageArt = () => {
   return (
-    <ImgRenderArts appearance={'span'} src={``} />
-  )
-}
+    <MainContent>
+      <ImgRenderArts appearance={"span"} src={``} />
+    </MainContent>
+  );
+};
 
-export default PageArt
+export default PageArt;

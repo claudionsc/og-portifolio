@@ -7,15 +7,7 @@ export const MainContent = styled.main`
   height: 100vh;
   height: auto;
 
-  header {
-    background-color: cyan;
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+
 
   .artwork-detail {
     display: block;
