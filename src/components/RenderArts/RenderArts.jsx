@@ -1,6 +1,7 @@
 import React from "react";
 import { MainContent } from "./RenderArtsStyle";
-import ImgRenderArts from "../imgRenderArts/ImgRenderArts";
+// import {TsImgArts as ImgRenderArts} from '../imgRenderArts'
+import { ImgRenderArts } from "../imgRenderArts/ImgRenderArts";
 
 const RenderArts = () => {
   // Lista de obras do artista (pode ser um array de URLs de imagens)
@@ -22,9 +23,9 @@ const RenderArts = () => {
         {artworks.map((obras, index) => {
           return( 
             <span className="artwork-detail">
-              <ImgRenderArts>
+              <ImgRenderArts.ImgRenderArts>
               <img src="" alt={`Obra `} />
-              </ImgRenderArts>
+              </ImgRenderArts.ImgRenderArts>
             </span>
           )
         })}

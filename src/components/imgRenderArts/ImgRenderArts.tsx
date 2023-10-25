@@ -1,12 +1,12 @@
 import React, { HTMLAttributes } from "react";
 import { Link } from "react-router-dom";
 
-interface ImgProps extends HTMLAttributes<HTMLAnchorElement> {
-  appearance: typeof Link;
+interface ImgProps extends HTMLAttributes<HTMLAnchorElement | HTMLElement> {
+  appearance: 'span' | typeof Link;
   to?: string;
 }
 
-export default function ImgRenderArts({ appearance: Component, to, children, ...props }: ImgProps): React.ReactElement{
+export const ImgRenderArts = ({ appearance: Component, to, children, ...props }: ImgProps): React.ReactElement => {
   return <Component to={to || ""} {...props}>
     {children}
   </Component>

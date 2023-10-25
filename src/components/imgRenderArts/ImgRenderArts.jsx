@@ -1,4 +1,4 @@
-"use strict";
+import React from "react";
 var __rest = (this && this.__rest) || function (s, e) {
     var t = {};
     for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
@@ -10,13 +10,9 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     return t;
 };
-exports.__esModule = true;
-var react_1 = require("react");
-function ImgRenderArts(_a) {
-    var Component = _a.appearance, to = _a.to, children = _a.children, props = __rest(_a, ["appearance", "to", "children"]);
+export const ImgRenderArts = (_a) => {
+    var { appearance: Component, to, children } = _a, props = __rest(_a, ["appearance", "to", "children"]);
     return <Component to={to || ""} {...props}>
     {children}
   </Component>;
-}
-exports["default"] = ImgRenderArts;
-;
+};
